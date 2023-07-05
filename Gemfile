@@ -31,4 +31,6 @@ group :development do
   # gem "spring"
 end
 gem 'net-http'
+gem 'rack-cors', :require => 'rack/cors'
+
 
