@@ -9,6 +9,10 @@ class UsersController < ApplicationController
       render json: { error: 'Error creating account' }, status: :unprocessable_entity
     end
   end
+  def index
+    users = User.all 
+    render json: users
+  end
 
   def show
     render json: @user
